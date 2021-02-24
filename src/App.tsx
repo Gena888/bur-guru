@@ -14,14 +14,15 @@ import { Testing } from './components/process/testing/testing';
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
+
         <Switch>
           <Route exact path='/' render={() => <Redirect to={'/Welcome'} />} />
           <Route path='/Welcome' render={() => <Welcome />} />
           <Route path='/Production' render={() => <Production />} />
           <Route path='/PriseList' render={() => <PriseList />} />
-          <Route path='/Procecess' render={() => <Procecess/>} />
+          <Route path='/Procecess' render={() => <Procecess />} />
           <Route path='/SandBlasting' render={() => <SandBlasting />} />
           <Route path='/Testing' render={() => <Testing />} />
           <Route path='/Delivery' render={() => <Delivery />} />
