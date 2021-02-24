@@ -9,6 +9,7 @@ import { PriseList } from './components/production/prise-list/prise-list';
 import { Procecess } from './components/process/process';
 import { SandBlasting } from './components/process/sandblasting/sandblasting';
 import { Delivery } from './components/delivery/delivery';
+import { Testing } from './components/process/testing/testing';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/PriseList' render={() => <PriseList />} />
           <Route path='/Procecess' render={() => <Procecess/>} />
           <Route path='/SandBlasting' render={() => <SandBlasting />} />
+          <Route path='/Testing' render={() => <Testing />} />
           <Route path='/Delivery' render={() => <Delivery />} />
           <Route exact path='*' render={() => <div>404 not found</div>} />
         </Switch>
