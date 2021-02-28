@@ -1,0 +1,56 @@
+.welcome {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.welcome_enteryBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    min-height: 70vh;
+    align-items: center;
+}
+
+.welcome_enteryBlock h4 {
+    margin-bottom: 40px;
+}
+
+.welcome_enteryBlock div {
+    max-width: 50%;
+}
+
+.welcome_enteryBlock__image {}
+
+.welcome_enteryBlock__image img {
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.welcome_someNumBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome_someNumBlock div {
+    max-width: 30%;
+}
+
+.welcome_advantage {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.welcome_advantage div {
+    max-width: 45%;
+}
+
+.welcome_advantage__image img {
+    max-width: 400px;
+}
+
+.welcome_advantage__list {
+    text-align: left;
+}

@@ -1,11 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './header.module.css'
+import logoImg from '../../img/logo.png'
 
 export const Header = () => {
     return (
         <header>
-            <div>header- logo</div>
+            <div className={s.logoImage}>
+                <img src={logoImg} alt="" />
+            </div>
             <nav>
                 <ul className={s.topmenu}>
                     <li>
@@ -19,7 +22,7 @@ export const Header = () => {
                         </ul>
                     </li>
                     <li>
-                        <NavLink className={s.submenu_link} to="/Procecess">Технологический процесс</NavLink>
+                        <NavLink className={s.submenu_link} to="/Procecess">Тех&#160;процесс</NavLink>
                         <ul className={s.submenu}>
                             <li>
                                 <NavLink to="/SandBlasting">Пескоструйная обработка</NavLink>
@@ -34,7 +37,12 @@ export const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <div>header phones</div>
+            <div className={s.phonesInfo}>
+                <p>
+                    <span>+(375) 25 937 99 92</span> <br/>
+                    <span>Пн-Сб 9:00 - 21:00</span>
+                </p>
+            </div>
         </header>
 
     )
