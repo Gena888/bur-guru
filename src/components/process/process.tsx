@@ -1,8 +1,9 @@
 import React from 'react';
+import s from './process.module.css'
 
 export const Procecess = () => {
     return (
-        <section>
+        <section className={s.procecess}>
             <article>
                 <h4>Полная разборка</h4>
                 <p>Производится полная разборка и удаление всех РТИ уплотнителей, манжет и тд.</p>
